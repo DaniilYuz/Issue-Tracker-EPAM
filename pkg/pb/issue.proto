@@ -1,0 +1,139 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+import "google/api/annotations.proto";
+
+package service;
+
+option go_package = "git.epam.com/go-language-global-mentoring-program/pkg/gen;gen";
+
+service IssueService {
+  rpc CreateIssue(CreateIssueRequest) returns (CreateIssueResponse) {
+    option (google.api.http) = {
+      post: "/v1/issues"
+      body: "*"
+    };
+  }
+
+  rpc ReadIssue(ReadIssueRequest) returns (ReadIssueResponse) {
+    option (google.api.http) = {
+      get: "/v1/issues/{issue_id}"
+    };
+  }
+
+  rpc UpdateIssue(UpdateIssueRequest) returns (UpdateIssueResponse) {
+    option (google.api.http) = {
+      put: "/v1/issues/{issue.issue_id}"
+      body: "issue"
+    };
+  }
+
+  rpc DeleteIssue(DeleteIssueRequest) returns (google.protobuf.Empty) {
+    option (google.api.http) = {
+      delete: "/v1/issues/{issue_id}"
+    };
+  }
+
+  rpc ListIssues(ListIssuesRequest) returns (ListIssuesResponse) {
+    option (google.api.http) = {
+      get: "/v1/issues"
+    };
+  }
+}
+
+message Issue {
+    string issue_id = 1;
+    
+    google.protobuf.Timestamp create_date = 2;
+    google.protobuf.Timestamp modify_date = 3;
+
+    string summary = 4;
+    string description = 5;
+
+    Status status = 6; 
+    Resolution resolution = 7;
+    IssueType type = 8;
+    Priority priority = 9;
+
+    string project_id = 10;
+    string assignee_id = 11;
+}
+
+enum Status {
+    STATUS_UNSPECIFIED = 0;
+
+    STATUS_NEW = 1;
+    STATUS_ASSIGNED = 2;
+    STATUS_IN_PROGRESS = 3;
+    STATUS_RESOLVED = 4;
+    STATUS_CLOSED = 5;
+    STATUS_REOPENED = 6;
+}
+enum Resolution {
+    RESOLUTION_RESOLUTION_UNSPECIFIED = 0;
+
+    RESOLUTION_FIXED = 1;
+    RESOLUTION_INVALID = 2;
+    RESOLUTION_WONTFIX = 3;
+    RESOLUTION_WORKSFORME = 4;
+}
+enum IssueType {
+    ISSUE_TYPE_UNSPECIFIED = 0;
+
+    ISSUE_TYPE_COSMETIC = 1;
+    ISSUE_TYPE_BUG = 2;
+    ISSUE_TYPE_FEATURE = 3;
+    ISSUE_TYPE_PERFORMANCE = 4;
+}
+enum Priority {
+    PRIORITY_UNSPECIFIED = 0;
+
+    PRIORITY_CRITICAL = 1;
+    PRIORITY_MAJOR = 2;
+    PRIORITY_IMPORTANT = 3;
+    PRIORITY_MINOR = 4;
+}
+
+message CreateIssueRequest {
+    string summary = 1;
+    string description = 2;
+
+    Status status = 3;
+    Resolution resolution = 4;
+    IssueType type = 5;
+    Priority priority = 6;
+
+    string project_id = 7;
+    string assignee_id = 8;
+}
+
+message CreateIssueResponse {
+    Issue issue = 1;
+}
+
+message ReadIssueRequest {
+    string issue_id = 1;
+}
+
+message ReadIssueResponse {
+    Issue issue = 1;
+}
+
+message UpdateIssueRequest {
+  Issue issue = 1;
+}
+
+message UpdateIssueResponse {
+  Issue issue = 1;
+}
+
+message DeleteIssueRequest {
+  string issue_id = 1;
+}
+
+message ListIssuesRequest {}
+
+message ListIssuesResponse {
+  repeated Issue issues = 1;
+}

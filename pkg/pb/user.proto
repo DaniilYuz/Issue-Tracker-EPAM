@@ -1,0 +1,84 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/api/annotations.proto";
+
+package service;
+
+option go_package = "git.epam.com/go-language-global-mentoring-program/pkg/gen;gen";
+
+service UserService {
+    rpc CreateUser(CreateUserRequest) returns (CreateUserResponse) {
+        option(google.api.http) = {
+            post: "/v1/users"
+            body: "*"
+        };
+    }
+    rpc ReadUser(ReadUserRequest) returns (ReadUserResponse) {
+        option (google.api.http) = {
+            get: "/v1/users/{user_id}"
+        };
+    }
+
+    rpc UpdateUser(UpdateUserRequest) returns (UpdateUserResponse) {
+        option (google.api.http) = {
+            put: "/v1/users/{user.user_id}"
+            body: "user"
+        };
+    }
+
+    rpc DeleteUser(DeleteUserRequest) returns (google.protobuf.Empty) {
+        option (google.api.http) = {
+            delete: "/v1/users/{user_id}"
+        };
+    }
+
+    rpc ListUsers(ListUsersRequest) returns (ListUsersResponse) {
+        option (google.api.http) = {
+            get: "/v1/users"
+        };
+    }
+}
+
+message User {
+  string user_id = 1;
+  string first_name = 2;
+  string last_name = 3;
+  string email_address = 4;
+}
+
+message CreateUserRequest {
+    string first_name = 1;
+    string last_name = 2;
+    string email_address = 3;
+}
+
+message CreateUserResponse {
+    User user = 1;
+}
+
+message ReadUserRequest {
+    string user_id = 1;
+}
+
+message ReadUserResponse {
+    User user = 1;
+}
+
+message UpdateUserRequest {
+    User user = 1;
+}
+
+message UpdateUserResponse {
+    User user = 1;
+}
+
+message DeleteUserRequest {
+  string user_id = 1;
+}
+
+message ListUsersRequest {}
+
+message ListUsersResponse {
+  repeated User users = 1;
+}
