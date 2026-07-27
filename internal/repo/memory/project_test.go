@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"git.epam.com/go-language-global-mentoring-program/internal/domain"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/domain"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc/codes"

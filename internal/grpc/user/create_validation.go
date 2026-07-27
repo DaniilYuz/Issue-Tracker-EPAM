@@ -3,7 +3,7 @@ package user
 import (
 	"net/mail"
 
-	"git.epam.com/go-language-global-mentoring-program/pkg/gen"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/pkg/gen"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

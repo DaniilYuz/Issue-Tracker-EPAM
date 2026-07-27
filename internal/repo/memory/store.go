@@ -1,7 +1,7 @@
 package memory
 
 import (
-	"git.epam.com/go-language-global-mentoring-program/internal/repo"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/repo"
 	"github.com/hashicorp/go-memdb"
 )
 

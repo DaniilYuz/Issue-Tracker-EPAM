@@ -3,7 +3,7 @@ package repo
 import (
 	"context"
 
-	"git.epam.com/go-language-global-mentoring-program/internal/domain"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/domain"
 )
 
 type UserRepository interface {

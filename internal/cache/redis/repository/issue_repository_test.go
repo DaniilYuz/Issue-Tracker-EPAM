@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"git.epam.com/go-language-global-mentoring-program/internal/domain"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/domain"
 	"github.com/alicebob/miniredis/v2"
 	"github.com/redis/go-redis/v9"
 	"github.com/stretchr/testify/assert"

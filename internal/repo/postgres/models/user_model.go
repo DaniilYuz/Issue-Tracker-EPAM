@@ -1,6 +1,6 @@
 package models
 
-import "git.epam.com/go-language-global-mentoring-program/internal/domain"
+import "github.com/DaniilYuz/Issue-Tracker-EPAM/internal/domain"
 
 type UserModel struct {
 	ID           string `gorm:"primaryKey"`

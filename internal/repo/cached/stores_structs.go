@@ -3,8 +3,8 @@ package cached
 import (
 	"time"
 
-	"git.epam.com/go-language-global-mentoring-program/internal/cache"
-	"git.epam.com/go-language-global-mentoring-program/internal/repo"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/cache"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/repo"
 )
 
 type userStore struct {

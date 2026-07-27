@@ -5,9 +5,9 @@ import (
 	"log"
 	"time"
 
-	"git.epam.com/go-language-global-mentoring-program/internal/domain"
-	"git.epam.com/go-language-global-mentoring-program/internal/grpc/common/utils"
-	"git.epam.com/go-language-global-mentoring-program/internal/repo"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/domain"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/grpc/common/utils"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/repo"
 	"github.com/brianvoe/gofakeit/v6"
 )
 

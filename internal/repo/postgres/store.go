@@ -3,8 +3,8 @@ package postgres
 import (
 	"fmt"
 
-	"git.epam.com/go-language-global-mentoring-program/internal/repo"
-	"git.epam.com/go-language-global-mentoring-program/internal/repo/postgres/repositories"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/repo"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/repo/postgres/repositories"
 	"gorm.io/gorm"
 )
 

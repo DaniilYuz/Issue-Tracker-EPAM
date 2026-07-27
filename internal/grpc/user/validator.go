@@ -1,6 +1,6 @@
 package user
 
-import "git.epam.com/go-language-global-mentoring-program/pkg/gen"
+import "github.com/DaniilYuz/Issue-Tracker-EPAM/pkg/gen"
 
 type UserValidator interface {
 	ValidateCreate(req *gen.CreateUserRequest) error

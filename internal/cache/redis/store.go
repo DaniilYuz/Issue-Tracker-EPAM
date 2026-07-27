@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"git.epam.com/go-language-global-mentoring-program/internal/cache"
-	"git.epam.com/go-language-global-mentoring-program/internal/cache/redis/repository"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/cache"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/cache/redis/repository"
 	"github.com/redis/go-redis/v9"
 )
 

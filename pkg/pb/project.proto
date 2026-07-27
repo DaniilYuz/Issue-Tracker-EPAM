@@ -5,7 +5,7 @@ import "google/api/annotations.proto";
 
 package service;
 
-option go_package = "git.epam.com/go-language-global-mentoring-program/pkg/gen;gen";
+option go_package = "github.com/DaniilYuz/Issue-Tracker-EPAM/pkg/gen;gen";
 
 service ProjectService {
   rpc CreateProject(CreateProjectRequest) returns (CreateProjectResponse) {

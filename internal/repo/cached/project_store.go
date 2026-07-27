@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"git.epam.com/go-language-global-mentoring-program/internal/domain"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/domain"
 )
 
 func (s *projectStore) CreateProject(ctx context.Context, project *domain.Project) error {

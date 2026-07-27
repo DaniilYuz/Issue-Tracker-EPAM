@@ -3,7 +3,7 @@ package issue
 import (
 	"testing"
 
-	"git.epam.com/go-language-global-mentoring-program/pkg/gen"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/pkg/gen"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/protobuf/types/known/timestamppb"

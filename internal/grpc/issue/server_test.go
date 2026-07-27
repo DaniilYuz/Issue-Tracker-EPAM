@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"git.epam.com/go-language-global-mentoring-program/internal/domain"
-	"git.epam.com/go-language-global-mentoring-program/pkg/gen"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/domain"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/pkg/gen"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

@@ -7,13 +7,14 @@
 package gen
 
 import (
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	emptypb "google.golang.org/protobuf/types/known/emptypb"
 	timestamppb "google.golang.org/protobuf/types/known/timestamppb"
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
 )
 
 const (
@@ -903,7 +904,7 @@ const file_pkg_pb_issue_proto_rawDesc = "" +
 	"\vUpdateIssue\x12\x1b.service.UpdateIssueRequest\x1a\x1c.service.UpdateIssueResponse\x12B\n" +
 	"\vDeleteIssue\x12\x1b.service.DeleteIssueRequest\x1a\x16.google.protobuf.Empty\x12E\n" +
 	"\n" +
-	"ListIssues\x12\x1a.service.ListIssuesRequest\x1a\x1b.service.ListIssuesResponseB?Z=git.epam.com/go-language-global-mentoring-program/pkg/gen;genb\x06proto3"
+	"ListIssues\x12\x1a.service.ListIssuesRequest\x1a\x1b.service.ListIssuesResponseB?Z=github.com/DaniilYuz/Issue-Tracker-EPAM/pkg/gen;genb\x06proto3"
 
 var (
 	file_pkg_pb_issue_proto_rawDescOnce sync.Once

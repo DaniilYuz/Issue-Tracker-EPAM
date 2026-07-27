@@ -1,7 +1,7 @@
 package issue
 
 import (
-	"git.epam.com/go-language-global-mentoring-program/pkg/gen"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/pkg/gen"
 )
 
 type IssueValidator interface {

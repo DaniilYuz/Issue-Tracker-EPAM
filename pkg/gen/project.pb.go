@@ -7,12 +7,13 @@
 package gen
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	emptypb "google.golang.org/protobuf/types/known/emptypb"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
+	emptypb "google.golang.org/protobuf/types/known/emptypb"
 )
 
 const (
@@ -513,7 +514,7 @@ const file_pkg_pb_project_proto_rawDesc = "" +
 	"\vReadProject\x12\x1b.service.ReadProjectRequest\x1a\x1c.service.ReadProjectResponse\x12N\n" +
 	"\rUpdateProject\x12\x1d.service.UpdateProjectRequest\x1a\x1e.service.UpdateProjectResponse\x12F\n" +
 	"\rDeleteProject\x12\x1d.service.DeleteProjectRequest\x1a\x16.google.protobuf.Empty\x12K\n" +
-	"\fListProjects\x12\x1c.service.ListProjectsRequest\x1a\x1d.service.ListProjectsResponseB?Z=git.epam.com/go-language-global-mentoring-program/pkg/gen;genb\x06proto3"
+	"\fListProjects\x12\x1c.service.ListProjectsRequest\x1a\x1d.service.ListProjectsResponseB?Z=github.com/DaniilYuz/Issue-Tracker-EPAM/pkg/gen;genb\x06proto3"
 
 var (
 	file_pkg_pb_project_proto_rawDescOnce sync.Once

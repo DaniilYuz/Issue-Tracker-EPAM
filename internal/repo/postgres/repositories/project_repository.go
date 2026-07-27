@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	"git.epam.com/go-language-global-mentoring-program/internal/domain"
-	"git.epam.com/go-language-global-mentoring-program/internal/repo"
-	pgmodels "git.epam.com/go-language-global-mentoring-program/internal/repo/postgres/models"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/domain"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/repo"
+	pgmodels "github.com/DaniilYuz/Issue-Tracker-EPAM/internal/repo/postgres/models"
 	"github.com/google/uuid"
 	"gorm.io/gorm"
 )

@@ -3,7 +3,7 @@ package models
 import (
 	"time"
 
-	"git.epam.com/go-language-global-mentoring-program/internal/domain"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/domain"
 )
 
 type IssueModel struct {

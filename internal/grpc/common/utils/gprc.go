@@ -4,8 +4,8 @@ import (
 	"math/rand"
 	"time"
 
-	"git.epam.com/go-language-global-mentoring-program/internal/domain"
-	"git.epam.com/go-language-global-mentoring-program/pkg/gen"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/domain"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/pkg/gen"
 	"github.com/oklog/ulid/v2"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )

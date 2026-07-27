@@ -1,6 +1,6 @@
 package memory
 
-import "git.epam.com/go-language-global-mentoring-program/internal/cache"
+import "github.com/DaniilYuz/Issue-Tracker-EPAM/internal/cache"
 
 type MemoryCache struct {
 	*UserCache

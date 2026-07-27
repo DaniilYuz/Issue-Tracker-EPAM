@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"time"
 
-	"git.epam.com/go-language-global-mentoring-program/internal/cache/utils"
-	"git.epam.com/go-language-global-mentoring-program/internal/domain"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/cache/utils"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/internal/domain"
 )
 
 type ProjectCache struct {

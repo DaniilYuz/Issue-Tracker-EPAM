@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"os"
 
-	"git.epam.com/go-language-global-mentoring-program/pkg/gen"
+	"github.com/DaniilYuz/Issue-Tracker-EPAM/pkg/gen"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 	"github.com/joho/godotenv"
 	"google.golang.org/grpc"

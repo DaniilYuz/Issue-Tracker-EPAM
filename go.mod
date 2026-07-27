@@ -1,4 +1,4 @@
-module git.epam.com/go-language-global-mentoring-program
+module github.com/DaniilYuz/Issue-Tracker-EPAM
 
 go 1.24.0
 

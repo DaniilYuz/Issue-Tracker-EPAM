@@ -7,12 +7,13 @@
 package gen
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	emptypb "google.golang.org/protobuf/types/known/emptypb"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
+	emptypb "google.golang.org/protobuf/types/known/emptypb"
 )
 
 const (
@@ -533,7 +534,7 @@ const file_pkg_pb_user_proto_rawDesc = "" +
 	"UpdateUser\x12\x1a.service.UpdateUserRequest\x1a\x1b.service.UpdateUserResponse\x12@\n" +
 	"\n" +
 	"DeleteUser\x12\x1a.service.DeleteUserRequest\x1a\x16.google.protobuf.Empty\x12B\n" +
-	"\tListUsers\x12\x19.service.ListUsersRequest\x1a\x1a.service.ListUsersResponseB?Z=git.epam.com/go-language-global-mentoring-program/pkg/gen;genb\x06proto3"
+	"\tListUsers\x12\x19.service.ListUsersRequest\x1a\x1a.service.ListUsersResponseB?Z=github.com/DaniilYuz/Issue-Tracker-EPAM/pkg/gen;genb\x06proto3"
 
 var (
 	file_pkg_pb_user_proto_rawDescOnce sync.Once
