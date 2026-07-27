@@ -15,5 +15,5 @@ jobs:
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd ~/projects/my-operator
+            cd ~/projects/issue-tracker
             git pull origin main
