@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: issue-tracker
+data:
+  PORT: "50051"
+  GATEWAY_PORT: "50062"
+  SEED_DATABASE: "true"
+  STORAGE_TYPE: "postgres"
+  CACHE_TYPE: "redis"
+  REDIS_HOST: "redis"
+  REDIS_PORT: "6379"
+  GRPC_HOST: "issue-tracker"
+  DB_HOST: "postgres"
+  DB_PORT: "5432"
+  DB_SSLMODE: "disable"
+  DB_TIMEZONE: "UTC"
