@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gateway
+  namespace: issue-tracker
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gateway
+  template:
+    metadata:
+      labels:
+        app: gateway
+    spec:
+      nodeSelector:
+        role: app
+      containers:
+        - name: gateway
+          image: localhost:5050/issue-tracker:latest
+          imagePullPolicy: Never
+          command: ["./gateway"]
+          ports:
+            - containerPort: 50062
+          envFrom:
+            - configMapRef:
+                name: app-config
+          readinessProbe:
+            tcpSocket:
+              port: 50062
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            failureThreshold: 5
+          livenessProbe:
+            tcpSocket:
+              port: 50062
+            initialDelaySeconds: 30
+            periodSeconds: 30
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gateway
+  namespace: issue-tracker
+spec:
+  selector:
+    app: gateway
+  ports:
+    - name: http
+      port: 80
+      targetPort: 50062
